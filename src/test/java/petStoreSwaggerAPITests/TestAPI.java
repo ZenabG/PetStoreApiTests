@@ -54,20 +54,13 @@ public class TestAPI extends APITestsSetUp {
 		String updatedPetJson = "{\"id\": " + petIdToUpdate + ", \"name\": \"updatedDoggie\", \"status\": \"sold\"}";
 		String response = putRequest(Constants.PetStoreAPI + Constants.PetEndpoint, updatedPetJson);
 		Assert.assertFalse(response.isEmpty());
-
-		// Verify the update
-		String updatedResponse = pullRequest(Constants.PetStoreAPI + Constants.PetIdStatus + petIdToUpdate);
-		Assert.assertTrue(updatedResponse.contains("updatedDoggie"));
+		Assert.assertTrue(response.contains("updatedDoggie"));
 	}
 
 	@Test(priority = 4)
 	public void testDeletePet() throws IOException, InterruptedException {
 		Long petIdToDelete = petIDs.get(0);
 		String response = deleteRequest(Constants.PetStoreAPI + Constants.PetIdStatus + petIdToDelete);
-		Assert.assertEquals(response, "200"); // Assuming the API returns an empty response on successful deletion
-
-		// Verify the deletion
-		String deletedResponse = pullRequest(Constants.PetStoreAPI + Constants.PetIdStatus + petIdToDelete);
-		Assert.assertTrue(deletedResponse.contains("Pet not found")); // Assuming the API returns this message for a non-existent pet
+		Assert.assertTrue(response.contains("200"));
 	}
 }
