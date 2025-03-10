@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="petStoreSwaggerAPITests.TestAPI" time="10.47" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/zenabgorach/IdeaProjects/PetStoreAPITests/target/test-classes:/Users/zenabgorach/IdeaProjects/PetStoreAPITests/target/classes:/Users/zenabgorach/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/zenabgorach/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/zenabgorach/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/zenabgorach/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/zenabgorach/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/zenabgorach/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/zenabgorach/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/zenabgorach/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/zenabgorach/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/zenabgorach/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/zenabgorach/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/zenabgorach/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/zenabgorach/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/zenabgorach/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/zenabgorach/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/zenabgorach/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/zenabgorach/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/zenabgorach/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/zenabgorach/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/zenabgorach/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/zenabgorach/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/zenabgorach/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/zenabgorach/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/zenabgorach/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/zenabgorach/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/zenabgorach/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/zenabgorach/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/zenabgorach/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/zenabgorach/IdeaProjects/PetStoreAPITests/target/surefire/surefirebooter-20250311023156754_3.jar /Users/zenabgorach/IdeaProjects/PetStoreAPITests/target/surefire 2025-03-11T02-31-56_645-jvmRun1 surefire-20250311023156754_1tmp surefire_0-20250311023156754_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/zenabgorach/IdeaProjects/PetStoreAPITests/target/test-classes:/Users/zenabgorach/IdeaProjects/PetStoreAPITests/target/classes:/Users/zenabgorach/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/zenabgorach/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/zenabgorach/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/zenabgorach/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/zenabgorach/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/zenabgorach/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/zenabgorach/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/zenabgorach/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/zenabgorach/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/zenabgorach/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/zenabgorach/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/zenabgorach/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/zenabgorach/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/zenabgorach/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/zenabgorach/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/zenabgorach/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/zenabgorach/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/zenabgorach/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/zenabgorach/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/zenabgorach/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/zenabgorach/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/zenabgorach/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/zenabgorach/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/zenabgorach/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/zenabgorach/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/zenabgorach/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/zenabgorach/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/zenabgorach/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/zenabgorach"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/zenabgorach/IdeaProjects/PetStoreAPITests"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/zenabgorach/IdeaProjects/PetStoreAPITests/target/surefire/surefirebooter-20250311023156754_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.2"/>
+    <property name="user.name" value="zenabgorach"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/zenabgorach/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/r_/hx_wrd6x4y74q6z44lnwpqyr0000gn/T/"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="/Users/zenabgorach/IdeaProjects/PetStoreAPITests"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/zenabgorach/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="23.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testGetAllAvailablePetDetails" classname="petStoreSwaggerAPITests.TestAPI" time="3.174">
+    <system-out><![CDATA[2 : Tom
+9223372036854775804 : doggie
+9223372036854775803 : doggie
+9223372036854775802 : doggie
+9223372036854775801 : doggie
+9223372036854775800 : doggie
+9223372036854775799 : doggie
+9223372036854775798 : doggie
+9223372036854775797 : doggie
+9223372036854775796 : doggie
+9223372036854775795 : doggie
+12 : doggie
+9223372036854775794 : doggie
+9223372036854775793 : doggie
+9223372036854775792 : doggie
+15 : Рыжик
+9223372036854775791 : doggie
+9223372036854775790 : doggie
+21474836500 : doggie
+9223372036854775789 : doggie
+18 : Princess
+9223372036854775788 : doggie
+9223372036854775787 : doggie
+9223372036854775786 : doggie
+9223372036854775785 : doggie
+9223372036854775784 : doggie
+9223372036854775783 : doggie
+24 : William
+9223372036854775782 : doggie
+25 : Dog
+9223372036854775781 : doggie
+26 : Princess
+9223372036854775780 : doggie
+9223372036854775779 : doggie
+9223372036854775778 : doggie
+9223372036854775777 : doggie
+30 : Princess
+25622936 : doggie
+9223372036854775776 : doggie
+9223372036854775775 : doggie
+32 : Princess
+9223372036854775774 : doggie
+9223372036854775773 : doggie
+9223372036854775772 : doggie
+35 : Princess
+9223372036854775771 : doggie
+36 : Princess
+9223372036854775770 : doggie
+9223372036854775769 : doggie
+9223372036854775768 : doggie
+9223372036854775767 : doggie
+9223372036854775766 : doggie
+9223372036854775765 : doggie
+9223372036854775764 : doggie
+9223372036854775763 : doggie
+44 : Princess
+9223372036854775762 : doggie
+45 : dog
+9223372036854775761 : doggie
+9223372036854775760 : doggie
+9223372036854775759 : doggie
+9223372036854775758 : doggie
+49 : Princess
+9223372036854775757 : doggie
+50 : Fluflly
+9223372036854775756 : doggie
+9223372036854775755 : doggie
+9223372036854775754 : doggie
+53 : Simba
+9223372036854775753 : doggie
+9223372036854775752 : doggie
+9223372036854775751 : doggie
+434238 : Oscar
+9223372036854775750 : doggie
+12345 : doggie
+9223372036854775749 : doggie
+9223372036854775748 : doggie
+3072021 : birdie
+9223372036854775747 : doggie
+9223372036854775746 : doggie
+9223372036854775745 : doggie
+62 : Princess
+9223372036854775744 : doggie
+9223372036854775743 : doggie
+9223372036854775742 : doggie
+65 : Princess
+9223372036854775741 : doggie
+9223372036854775740 : doggie
+9223372036854775739 : doggie
+68 : Princess
+9223372036854775738 : doggie
+9223372036854775737 : doggie
+70 : Princess
+9223372036854775736 : doggie
+71 : Princess
+9223372036854775735 : doggie
+72 : Princess
+9223372036854775734 : doggie
+73 : Princess
+9223372036854775733 : doggie
+74 : Princess
+9223372036854775732 : doggie
+75 : Princess
+9223372036854775731 : doggie
+9223372036854775730 : doggie
+9223372036854775729 : doggie
+78 : Princess
+9223372036854775728 : doggie
+79 : Princess
+9223372036854775727 : doggie
+9223372036854775726 : doggie
+9223372036854775725 : doggie
+82 : Princess
+9223372036854775724 : doggie
+9223372036854775723 : doggie
+9223372036854775722 : doggie
+85 : Princess
+9223372036854775721 : doggie
+9223372036854775720 : doggie
+9223372036854775719 : doggie
+9223372036854775718 : doggie
+9223372036854775717 : doggie
+9223372036854775716 : doggie
+9223372036854775715 : doggie
+9223372036854775714 : doggie
+9223372036854775713 : doggie
+9223372036854775712 : doggie
+9223372036854775711 : doggie
+9223372036854775710 : doggie
+9223372036854775709 : doggie
+98 : Princess
+9223372036854775708 : doggie
+99 : fido
+9223372036854775707 : doggie
+100 : doggie
+9223372036854775706 : doggie
+9223372036854775705 : doggie
+9223372036854775704 : doggie
+9223372036854775703 : doggie
+9223372036854775702 : doggie
+9223372036854775701 : doggie
+9223372036854775700 : doggie
+9223372036854775699 : doggie
+9223372036854775698 : doggie
+9223372036854775697 : doggie
+123334455 : Pepsi
+9223372036854775696 : doggie
+9223372036854775695 : doggie
+9223372036854775694 : doggie
+9223372036854775693 : doggie
+9223372036854775692 : doggie
+9223372036854775691 : doggie
+9223372036854775690 : doggie
+9223372036854775689 : doggie
+9223372036854775688 : doggie
+9223372036854775687 : doggie
+9223372036854775686 : doggie
+9223372036854775685 : doggie
+4737074 : Cat1
+9223372036854775684 : doggie
+123 : putty
+9223372036854775683 : doggie
+9223372036854775682 : doggie
+9223372036854775681 : doggie
+9223372036854775680 : doggie
+9223372036854775679 : doggie
+9223372036854775678 : doggie
+9223372036854775677 : doggie
+9223372036854775676 : doggie
+131 : doggie
+132 : doggie
+9223372036854775675 : doggie
+9223372036854775674 : doggie
+134 : doggie
+9223372036854775673 : doggie
+9223372036854775672 : doggie
+9223372036854775671 : doggie
+9223372036854775670 : doggie
+4151478 : Cat2
+9223372036854775669 : doggie
+9223372036854775668 : doggie
+9223372036854775667 : doggie
+9223372036854775666 : doggie
+9223372036854775665 : doggie
+9223372036854775664 : doggie
+9223372036854775663 : doggie
+9223372036854775662 : doggie
+9223372036854775661 : doggie
+9223372036854775660 : doggie
+9223372036854775659 : doggie
+9223372036854775658 : doggie
+9223372036854775657 : doggie
+150 : Kitty
+9223372036854775656 : doggie
+9223372036854775655 : doggie
+9223372036854775654 : doggie
+9223372036854775653 : doggie
+9223372036854775652 : doggie
+9223372036854775651 : doggie
+9223372036854775650 : doggie
+9223372036854775649 : doggie
+9223372036854775648 : doggie
+31379777 : Ottis
+9223372036854775647 : doggie
+9223372036854775646 : doggie
+9223372036854775645 : doggie
+9223372036854775644 : doggie
+9223372036854775643 : doggie
+9223372036854775642 : doggie
+9223372036854775641 : doggie
+9223372036854775640 : doggie
+9223372036854775639 : doggie
+9223372036854775638 : doggie
+9223372036854775637 : doggie
+9223372036854775636 : doggie
+9223372036854775635 : doggie
+9223372036854775634 : doggie
+9223372036854775633 : doggie
+9223372036854775632 : doggie
+9223372036854775631 : doggie
+9223372036854775630 : doggie
+9223372036854775629 : doggie
+9223372036854775628 : doggie
+9223372036854775627 : doggie
+9223372036854775626 : doggie
+9223372036854775625 : doggie
+9223372036854775624 : doggie
+9223372036854775623 : doggie
+9223372036854775622 : doggie
+9223372036854775621 : doggie
+9223372036854775620 : doggie
+9223372036854775619 : doggie
+9223372036854775618 : doggie
+9223372036854775617 : doggie
+190 : Jazz
+9223372036854775616 : doggie
+9223372036854775615 : doggie
+9223372036854775614 : doggie
+9223372036854775613 : doggie
+9223372036854775612 : doggie
+9223372036854775611 : doggie
+9223372036854775610 : doggie
+9223372036854775609 : doggie
+198 : Scotty
+9223372036854775608 : doggie
+9223372036854775607 : doggie
+9223372036854775606 : doggie
+9223372036854775605 : doggie
+9223372036854775604 : doggie
+9223372036854775603 : doggie
+9223372036854775602 : doggie
+9223372036854775601 : doggie
+9223372036854775600 : doggie
+9223372036854775599 : doggie
+9223372036854775598 : doggie
+9223372036854775597 : doggie
+9223372036854775596 : doggie
+9223372036854775595 : doggie
+9223372036854775594 : doggie
+9223372036854775593 : doggie
+9223372036854775592 : doggie
+9223372036854775591 : doggie
+9223372036854775590 : doggie
+9223372036854775589 : doggie
+9223372036854775588 : doggie
+9223372036854775587 : doggie
+9223372036854775586 : doggie
+9223372036854775585 : doggie
+222 : tex
+9223372036854775584 : doggie
+9223372036854775583 : doggie
+9223372036854775582 : doggie
+9223372036854775581 : doggie
+9223372036854775580 : doggie
+9223372036854775579 : doggie
+9223372036854775578 : doggie
+9223372036854775577 : doggie
+31379768 : abby
+70586304435 : nemo fish
+9223372036854775576 : doggie
+31379769 : Copito
+9223372036854775575 : doggie
+9223372036854775574 : doggie
+9223372036854775573 : doggie
+9223372036854775572 : doggie
+9223372036854775571 : doggie
+236 : Lauren
+9223372036854775570 : doggie
+9223372036854775569 : doggie
+31379760 : bella
+9223372036854775568 : doggie
+9223372036854775567 : doggie
+9223372036854775566 : doggie
+9223372036854775565 : doggie
+9223372036854775564 : doggie
+9223372036854775563 : doggie
+9223372036854775562 : doggie
+9223372036854775561 : doggie
+9223372036854775560 : doggie
+9223372036854775559 : doggie
+9223372036854775558 : doggie
+9223372036854775557 : doggie
+214748365000 : doggie
+9223372036854775556 : doggie
+9223372036854775555 : doggie
+9223372036854775554 : doggie
+9223372036854775553 : doggie
+9223372036854775552 : doggie
+9223372036854775551 : doggie
+9223372036854775550 : doggie
+9223372036854775549 : doggie
+9223372036854775548 : doggie
+9223372036854775547 : doggie
+9223372036854775546 : doggie
+9223372036854775545 : doggie
+9223372036854775544 : doggie
+9223372036854775543 : doggie
+9223372036854775542 : doggie
+9223372036854775541 : doggie
+9223372036854775540 : doggie
+9223372036854775539 : doggie
+4935316836824912 : necoma
+9223372036854775538 : doggie
+9223372036854775537 : doggie
+9223372036854775536 : doggie
+9223372036854775535 : doggie
+9223372036854775534 : doggie
+9223372036854775533 : doggie
+9223372036854775532 : doggie
+4371 : Horse
+9223372036854775531 : doggie
+9223372036854775530 : doggie
+9223372036854775529 : doggie
+9223372036854775528 : doggie
+9223372036854775527 : doggie
+9223372036854775526 : doggie
+9223372036854775525 : doggie
+9223372036854775524 : doggie
+9223372036854775523 : doggie
+9223372036854775522 : doggie
+9223372036854775521 : doggie
+9223372036854775520 : doggie
+9223372036854775519 : doggie
+9223372036854775518 : doggie
+9223372036854775517 : doggie
+9223372036854775516 : doggie
+9223372036854775515 : doggie
+9223372036854775514 : doggie
+9223372036854775513 : doggie
+9223372036854775512 : doggie
+9223372036854775511 : doggie
+9223372036854775510 : doggie
+9223372036854775509 : doggie
+9223372036854775508 : doggie
+9223372036854775507 : doggie
+9223372036854775506 : doggie
+9223372036854775505 : doggie
+9223372036854775504 : doggie
+9223372036854775503 : doggie
+9223372036854775502 : doggie
+9223372036854775501 : doggie
+9223372036854775500 : doggie
+9223372036854775499 : doggie
+9223372036854775498 : doggie
+9223372036854775497 : doggie
+9223372036854775496 : doggie
+9223372036854775495 : doggie
+9223372036854775494 : doggie
+313 : doggie
+9223372036854775493 : doggie
+9223372036854775492 : doggie
+9223372036854775491 : doggie
+9223372036854775490 : doggie
+9223372036854775489 : doggie
+9223372036854775488 : doggie
+9223372036854775487 : doggie
+9223372036854775486 : doggie
+9223372036854775485 : doggie
+9223372036854775484 : doggie
+9223372036854775483 : doggie
+9223372036854775482 : doggie
+9223372036854775481 : doggie
+9223372036854775480 : doggie
+9223372036854775479 : doggie
+9223372036854775478 : doggie
+9223372036854775477 : doggie
+9223372036854775476 : doggie
+9223372036854775475 : doggie
+9223372036854775474 : doggie
+9223372036854775473 : doggie
+9223372036854775472 : doggie
+9223372036854775471 : doggie
+9223372036854775470 : doggie
+9223372036854775469 : doggie
+9223372036854775468 : doggie
+9223372036854775467 : doggie
+9223372036854775466 : doggie
+9223372036854775465 : doggie
+9223372036854775464 : doggie
+9223372036854775463 : doggie
+344 : Doggie
+9223372036854775462 : doggie
+9223372036854775461 : doggie
+9223372036854775460 : doggie
+9223372036854775459 : doggie
+4444 : Jack
+9223372036854775458 : doggie
+9223372036854775457 : doggie
+9223372036854775456 : doggie
+3164527 : Cat2
+9223372036854775455 : doggie
+9223372036854775454 : doggie
+9223372036854775453 : doggie
+9223372036854775452 : doggie
+9223372036854775451 : doggie
+9223372036854775450 : doggie
+9223372036854775449 : doggie
+9223372036854775448 : doggie
+9223372036854775447 : doggie
+9223372036854775446 : doggie
+9223372036854775445 : doggie
+9223372036854775444 : doggie
+9223372036854775443 : doggie
+9223372036854775442 : doggie
+9223372036854775441 : doggie
+9223372036854775440 : doggie
+9223372036854775439 : doggie
+9223372036854775438 : doggie
+369 : Moccaloca
+9223372036854775437 : doggie
+9223372036854775436 : doggie
+9223372036854775435 : doggie
+9223372036854775434 : doggie
+9223372036854775433 : doggie
+9223372036854775432 : doggie
+9223372036854775431 : doggie
+9223372036854775430 : doggie
+9223372036854775429 : doggie
+9223372036854775428 : doggie
+9223372036854775427 : doggie
+9223372036854775426 : doggie
+9223372036854775425 : doggie
+9223372036854775424 : doggie
+9223372036854775423 : doggie
+9223372036854775422 : doggie
+9223372036854775421 : doggie
+9223372036854775420 : doggie
+9223372036854775419 : doggie
+9223372036854775418 : doggie
+9223372036854775417 : doggie
+9223372036854775416 : doggie
+9223372036854775415 : doggie
+9223372036854775414 : doggie
+9223372036854775413 : doggie
+9223372036854775412 : doggie
+9223372036854775411 : doggie
+9223372036854775410 : doggie
+9223372036854775409 : doggie
+9223372036854775408 : doggie
+9223372036854775407 : doggie
+9223372036854775406 : doggie
+9223372036854775405 : doggie
+9223372036854775404 : doggie
+9223372036854775403 : doggie
+9223372036854775402 : doggie
+9223372036854775401 : doggie
+406 : doggie
+9223372036854775400 : doggie
+3137976 : abby
+9223372036854775399 : doggie
+9223372036854775398 : doggie
+9223372036854775397 : doggie
+410 : Courtney
+9223372036854775396 : doggie
+9223372036854775395 : doggie
+9223372036854775394 : doggie
+9223372036854775393 : doggie
+9223372036854775392 : doggie
+9223372036854775391 : doggie
+9223372036854775390 : doggie
+9223372036854775389 : doggie
+9223372036854775388 : doggie
+9223372036854775387 : doggie
+9223372036854775386 : doggie
+9223372036854775385 : doggie
+9223372036854775384 : doggie
+9223372036854775383 : doggie
+9223372036854775382 : doggie
+9223372036854775381 : doggie
+9223372036854775380 : doggie
+9223372036854775379 : doggie
+9223372036854775378 : doggie
+9223372036854775377 : doggie
+9223372036854775376 : doggie
+9223372036854775375 : doggie
+9223372036854775374 : doggie
+9223372036854775373 : doggie
+9223372036854775372 : doggie
+9223372036854775371 : doggie
+9223372036854775370 : doggie
+9223372036854775369 : doggie
+9223372036854775368 : doggie
+9223372036854775367 : doggie
+9223372036854775366 : doggie
+9223372036854775365 : doggie
+9223372036854775364 : doggie
+9223372036854775363 : doggie
+9223372036854775362 : doggie
+9223372036854775361 : doggie
+9223372036854775360 : doggie
+9223372036854775359 : doggie
+9223372036854775358 : doggie
+9223372036854775357 : doggie
+9223372036854775356 : doggie
+9223372036854775355 : doggie
+9223372036854775354 : doggie
+9223372036854775353 : doggie
+9223372036854775352 : doggie
+9223372036854775351 : doggie
+9223372036854775350 : doggie
+9223372036854775349 : doggie
+9223372036854775348 : doggie
+9223372036854775347 : doggie
+9223372036854775346 : doggie
+9223372036854775345 : doggie
+9223372036854775344 : doggie
+9223372036854775343 : doggie
+9223372036854775342 : doggie
+9223372036854775341 : doggie
+9223372036854775340 : doggie
+9223372036854775339 : doggie
+9223372036854775338 : doggie
+9223372036854775337 : doggie
+9223372036854775336 : doggie
+9223372036854775335 : doggie
+9223372036854775334 : doggie
+9223372036854775333 : doggie
+9223372036854775332 : doggie
+9223372036854775331 : doggie
+9223372036854775330 : doggie
+9223372036854775329 : doggie
+9223372036854775328 : doggie
+9223372036854775327 : doggie
+9223372036854775326 : doggie
+9223372036854775325 : doggie
+9223372036854775324 : doggie
+9223372036854775323 : doggie
+9223372036854775322 : doggie
+9223372036854775321 : doggie
+9223372036854775320 : doggie
+9223372036854775319 : doggie
+9223372036854775318 : doggie
+9223372036854775317 : doggie
+9223372036854775316 : doggie
+9223372036854775315 : doggie
+9223372036854775314 : doggie
+9223372036854775313 : doggie
+9223372036854775312 : doggie
+9223372036854775311 : doggie
+9223372036854775310 : doggie
+9223372036854775309 : doggie
+9223372036854775308 : doggie
+9223372036854775307 : doggie
+500 : doggie
+9223372036854775306 : doggie
+9223372036854775305 : doggie
+9223372036854775304 : doggie
+9223372036854775303 : doggie
+9223372036854775302 : doggie
+2553 : Prueba 5
+9223372036854775301 : doggie
+9223372036854775300 : doggie
+9223372036854775299 : doggie
+9223372036854775298 : doggie
+9223372036854775297 : doggie
+9223372036854775296 : doggie
+9223372036854775295 : doggie
+9223372036854775294 : doggie
+9223372036854775293 : doggie
+9223372036854775292 : doggie
+9223372036854775291 : doggie
+9223372036854775290 : doggie
+517 : Reynold
+9223372036854775289 : doggie
+9223372036854775288 : doggie
+9223372036854775287 : doggie
+9223372036854775286 : doggie
+9223372036854775285 : doggie
+9223372036854775284 : doggie
+9223372036854775283 : doggie
+9223372036854775282 : doggie
+9223372036854775281 : doggie
+9223372036854775280 : doggie
+9223372036854775279 : doggie
+9223372036854775278 : doggie
+9223372036854775277 : doggie
+9223372036854775276 : doggie
+9223372036854775275 : doggie
+5163610 : Cat1
+9223372036854775274 : doggie
+9223372036854775273 : doggie
+9223372036854775272 : doggie
+9223372036854775271 : doggie
+9223372036854775270 : doggie
+9223372036854775269 : doggie
+9223372036854775268 : doggie
+9223372036854775267 : doggie
+9223372036854775266 : doggie
+9223372036854775265 : doggie
+9223372036854775264 : doggie
+9223372036854775263 : doggie
+9223372036854775262 : doggie
+9223372036854775261 : doggie
+9223372036854775260 : doggie
+9223372036854775259 : doggie
+9223372036854775258 : doggie
+9223372036854775257 : doggie
+9223372036854775256 : doggie
+9223372036854775255 : doggie
+9223372036854775254 : doggie
+9223372036854775253 : doggie
+9223372036854775252 : doggie
+555 : Madelynn
+9223372036854775251 : doggie
+9223372036854775250 : doggie
+9223372036854775249 : doggie
+9223372036854775248 : doggie
+9223372036854775247 : doggie
+9223372036854775246 : doggie
+9223372036854775245 : doggie
+9223372036854775244 : doggie
+9223372036854775243 : doggie
+9223372036854775242 : doggie
+352816 : Cat1
+9223372036854775241 : doggie
+9223372036854775240 : doggie
+9223372036854775239 : doggie
+9223372036854775238 : doggie
+9223372036854775237 : doggie
+9223372036854775236 : doggie
+9223372036854775235 : doggie
+9223372036854775234 : doggie
+9223372036854775233 : doggie
+9223372036854775232 : doggie
+9223372036854775231 : doggie
+9223372036854775230 : doggie
+9223372036854775229 : doggie
+9223372036854775228 : doggie
+9223372036854775227 : doggie
+9223372036854775226 : doggie
+9223372036854775225 : doggie
+9223372036854775224 : doggie
+9223372036854775223 : doggie
+9223372036854775222 : doggie
+9223372036854775221 : doggie
+9223372036854775220 : doggie
+9223372036854775219 : doggie
+9223372036854775218 : doggie
+9223372036854775217 : doggie
+9223372036854775216 : doggie
+9223372036854775215 : doggie
+9223372036854775214 : doggie
+9223372036854775213 : doggie
+9223372036854775212 : doggie
+9223372036854775211 : doggie
+9223372036854775210 : doggie
+9223372036854775209 : doggie
+9223372036854775208 : doggie
+9223372036854775207 : doggie
+9223372036854775206 : doggie
+9223372036854775205 : doggie
+9223372036854775204 : doggie
+9223372036854775203 : doggie
+9223372036854775202 : doggie
+9223372036854775201 : doggie
+9223372036854775200 : doggie
+9223372036854775199 : doggie
+9223372036854775198 : doggie
+9223372036854775197 : doggie
+610 : Josianne
+9223372036854775196 : doggie
+9223372036854775195 : doggie
+9223372036854775194 : doggie
+613 : Krackens
+9223372036854775193 : doggie
+9223372036854775192 : doggie
+9223372036854775191 : doggie
+9223372036854775190 : doggie
+9223372036854775189 : doggie
+9223372036854775188 : doggie
+9223372036854775187 : doggie
+9223372036854775186 : doggie
+9223372036854775185 : doggie
+9223372036854775184 : doggie
+9223372036854775183 : doggie
+9223372036854775182 : doggie
+9223372036854775181 : doggie
+9223372036854775180 : doggie
+9223372036854775179 : doggie
+9223372036854775178 : doggie
+9223372036854775177 : doggie
+9223372036854775176 : doggie
+9223372036854775175 : doggie
+9223372036854775174 : doggie
+9223372036854775173 : doggie
+9223372036854775172 : doggie
+9223372036854775171 : doggie
+9223372036854775170 : doggie
+9223372036854775169 : doggie
+9223372036854775168 : doggie
+9223372036854775167 : doggie
+9223372036854775166 : doggie
+9223372036854775165 : doggie
+9223372036854775164 : doggie
+9223372036854775163 : doggie
+9223372036854775162 : doggie
+9223372036854775161 : doggie
+9223372036854775160 : doggie
+9223372036854775159 : doggie
+9223372036854775158 : doggie
+9223372036854775157 : doggie
+9223372036854775156 : doggie
+9223372036854775155 : doggie
+9223372036854775154 : doggie
+9223372036854775153 : doggie
+9223372036854775152 : doggie
+9223372036854775151 : doggie
+9223372036854775150 : doggie
+9223372036854775149 : doggie
+4353534534534 : TestPet
+9223372036854775148 : doggie
+9223372036854775147 : doggie
+9223372036854775146 : doggie
+9223372036854775145 : doggie
+9223372036854775144 : doggie
+9223372036854775143 : doggie
+9223372036854775142 : doggie
+9223372036854775141 : doggie
+5630671 : Cat2
+666 : Demon
+9223372036854775140 : doggie
+9223372036854775139 : doggie
+9223372036854775138 : doggie
+9223372036854775137 : doggie
+9223372036854775136 : doggie
+9223372036854775135 : doggie
+9223372036854775134 : doggie
+9223372036854775133 : doggie
+9223372036854775132 : doggie
+9223372036854775131 : doggie
+9223372036854775130 : doggie
+9223372036854775129 : doggie
+9223372036854775128 : doggie
+9223372036854775127 : doggie
+9223372036854775126 : doggie
+9223372036854775125 : doggie
+9223372036854775124 : doggie
+9223372036854775123 : doggie
+8629903100653225 : Winnie
+9223372036854775122 : doggie
+9223372036854775121 : doggie
+9223372036854775120 : doggie
+9223372036854775119 : doggie
+9223372036854775118 : doggie
+9223372036854775117 : doggie
+9223372036854775116 : doggie
+9223372036854775115 : doggie
+9223372036854775114 : doggie
+9223372036854775113 : doggie
+9223372036854775112 : doggie
+9223372036854775111 : doggie
+9223372036854775110 : doggie
+3787392 : Cat1
+9223372036854775109 : doggie
+9223372036854775108 : doggie
+9223372036854775107 : doggie
+9223372036854775106 : doggie
+9223372036854775105 : doggie
+9223372036854775104 : doggie
+9223372036854775103 : doggie
+9223372036854775102 : doggie
+9223372036854775101 : doggie
+9223372036854775100 : doggie
+9223372036854775099 : doggie
+9223372036854775098 : doggie
+9223372016900022352 : tommy
+750 : Dario
+2828 : Patron 2
+3031860 : Cat2
+811 : Maegan
+5352318 : Cat1
+8143690 : Cat1
+88888 : masa
+831 : Beryl
+174938 : dogqa
+867 : Tiger
+884 : Mariah
+42181115 : doggie
+9223372036854774915 : Nemo fish
+555111222333 : Ivah_Wiegand
+9878278 : TestDog
+2130816 : Cat2
+950 : Vidal
+972 : Katrine
+983 : Mauricio
+4588454 : Cat1
+1001 : doggie
+6242544591362734 : Winnie
+7188 : Prueba 5
+1756198 : Cat1
+9222968140497180179 : test
+1112 : doggie
+5547069 : Cat2
+8084492 : Cat1
+3732551 : Cat2
+6970567 : Cat2
+68790 : pamuk
+15555 : doggie
+15556 : doggie
+1245 : xyz
+9501812 : Cat1
+1256 : Sparky
+12340976512343544 : necoma
+1557760 : Cat2
+814429 : Cat2
+703850 : doggie
+879789789790381 : Snoopdoggie
+2321841 : Cat1
+25122021 : Lea
+214748365000000 : doggie
+9223372016900017280 : NEMO FISH
+2147483650000 : doggie
+112121212121 : doggie1
+112233 : Postman
+5757 : Garfield2
+99999 : sid
+99998 : sid
+9222968140491042131 : doggie
+5107345 : Cat2
+333344444333333 : test
+41579891 : Test Dog David Solis
+1804 : dog
+4349773 : UpdateTest
+8372034 : Cat1
+2334562 : doggie-yoggie
+1859 : Prueba 5
+4265738 : Cat1
+12121 : TestPetName
+1882 : Prueba 2
+585555 : ammy
+100200 : Olena_s cat
+1308515 : Cat1
+3762109 : Cat1
+9223372036854773877 : motoo
+1945 : Booba
+4015 : dober
+1984 : doggie
+6089 : fishs
+100300 : cat
+77777 : Dogman
+7462823 : Cat2
+2019 : brezza
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testFindPetByID" classname="petStoreSwaggerAPITests.TestAPI" time="0.29">
+    <system-out><![CDATA[0 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/spark.spa.ftl"("en_IN", UTF-8, parsed); will try to load it.
+4 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/spark.spa_en_IN.ftl"): Not found
+5 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+6 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+6 [main] DEBUG freemarker.cache  - Loading template for "spark/spark.spa.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl"
+93 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "commons/commons-variables.ftl"("en_IN", UTF-8, parsed); will try to load it.
+93 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-variables_en_IN.ftl"): Not found
+93 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+94 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+94 [main] DEBUG freemarker.cache  - Loading template for "commons/commons-variables.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl"
+188 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "commons/commons-macros.ftl"("en_IN", UTF-8, parsed); will try to load it.
+188 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-macros_en_IN.ftl"): Not found
+189 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+189 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+189 [main] DEBUG freemarker.cache  - Loading template for "commons/commons-macros.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl"
+196 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed); will try to load it.
+196 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/attributes_en_IN.ftl"): Not found
+196 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+197 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+197 [main] DEBUG freemarker.cache  - Loading template for "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl"
+198 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/macros/log.ftl"("en_IN", UTF-8, parsed); will try to load it.
+199 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/log_en_IN.ftl"): Not found
+199 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+199 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+199 [main] DEBUG freemarker.cache  - Loading template for "spark/macros/log.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl"
+201 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed); will try to load it.
+201 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_IN.ftl"): Not found
+201 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+202 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+202 [main] DEBUG freemarker.cache  - Loading template for "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl"
+204 [main] DEBUG freemarker.cache  - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+204 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/macros/attr-common.ftl"("en_IN", UTF-8, parsed); will try to load it.
+205 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/attr-common_en_IN.ftl"): Not found
+205 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
+205 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
+205 [main] DEBUG freemarker.cache  - Loading template for "spark/macros/attr-common.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl"
+212 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/partials/head.ftl"("en_IN", UTF-8, parsed); will try to load it.
+212 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/head_en_IN.ftl"): Not found
+213 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+213 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+213 [main] DEBUG freemarker.cache  - Loading template for "spark/partials/head.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl"
+217 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed); will try to load it.
+217 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_IN.ftl"): Not found
+217 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+218 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+218 [main] DEBUG freemarker.cache  - Loading template for "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl"
+218 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed); will try to load it.
+219 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/navbar_en_IN.ftl"): Not found
+219 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+219 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+219 [main] DEBUG freemarker.cache  - Loading template for "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl"
+226 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed); will try to load it.
+227 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_IN.ftl"): Not found
+227 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+227 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+227 [main] DEBUG freemarker.cache  - Loading template for "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl"
+237 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/partials/test.ftl"("en_IN", UTF-8, parsed); will try to load it.
+237 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/test_en_IN.ftl"): Not found
+237 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+237 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+237 [main] DEBUG freemarker.cache  - Loading template for "spark/partials/test.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl"
+251 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed); will try to load it.
+251 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_IN.ftl"): Not found
+251 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+251 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+252 [main] DEBUG freemarker.cache  - Loading template for "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl"
+254 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/partials/exception.ftl"("en_IN", UTF-8, parsed); will try to load it.
+254 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/exception_en_IN.ftl"): Not found
+254 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
+254 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
+254 [main] DEBUG freemarker.cache  - Loading template for "spark/partials/exception.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl"
+255 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/partials/category.ftl"("en_IN", UTF-8, parsed); will try to load it.
+256 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/category_en_IN.ftl"): Not found
+256 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/category_en.ftl"): Not found
+256 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/category.ftl"): Found
+256 [main] DEBUG freemarker.cache  - Loading template for "spark/partials/category.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/category.ftl"
+257 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/partials/device.ftl"("en_IN", UTF-8, parsed); will try to load it.
+257 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/device_en_IN.ftl"): Not found
+258 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/device_en.ftl"): Not found
+258 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/device.ftl"): Found
+258 [main] DEBUG freemarker.cache  - Loading template for "spark/partials/device.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/device.ftl"
+259 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/partials/author.ftl"("en_IN", UTF-8, parsed); will try to load it.
+259 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/author_en_IN.ftl"): Not found
+259 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/author_en.ftl"): Not found
+260 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/author.ftl"): Found
+260 [main] DEBUG freemarker.cache  - Loading template for "spark/partials/author.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/author.ftl"
+261 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/partials/log.ftl"("en_IN", UTF-8, parsed); will try to load it.
+261 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/log_en_IN.ftl"): Not found
+261 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
+262 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
+262 [main] DEBUG freemarker.cache  - Loading template for "spark/partials/log.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl"
+263 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed); will try to load it.
+263 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_IN.ftl"): Not found
+263 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+264 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+264 [main] DEBUG freemarker.cache  - Loading template for "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl"
+300 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed); will try to load it.
+300 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/scripts_en_IN.ftl"): Not found
+300 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+300 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+300 [main] DEBUG freemarker.cache  - Loading template for "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl"
+302 [main] DEBUG freemarker.cache  - Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_IN", UTF-8, parsed); will try to load it.
+302 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-inject-js_en_IN.ftl"): Not found
+302 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+302 [main] DEBUG freemarker.cache  - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+302 [main] DEBUG freemarker.cache  - Loading template for "commons/commons-inject-js.ftl"("en_IN", UTF-8, parsed) from "jar:file:/Users/zenabgorach/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"
+]]></system-out>
+  </testcase>
+  <testcase name="testCreatePet" classname="petStoreSwaggerAPITests.TestAPI" time="0.317">
+    <system-out><![CDATA[602 [main] DEBUG freemarker.cache  - "spark/spark.spa.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+602 [main] DEBUG freemarker.cache  - "commons/commons-variables.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+603 [main] DEBUG freemarker.cache  - "commons/commons-macros.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+603 [main] DEBUG freemarker.cache  - "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+603 [main] DEBUG freemarker.cache  - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+603 [main] DEBUG freemarker.cache  - "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+603 [main] DEBUG freemarker.cache  - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+603 [main] DEBUG freemarker.cache  - "spark/macros/attr-common.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+603 [main] DEBUG freemarker.cache  - "spark/partials/head.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+603 [main] DEBUG freemarker.cache  - "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+603 [main] DEBUG freemarker.cache  - "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+604 [main] DEBUG freemarker.cache  - "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+606 [main] DEBUG freemarker.cache  - "spark/partials/test.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+607 [main] DEBUG freemarker.cache  - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+608 [main] DEBUG freemarker.cache  - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+608 [main] DEBUG freemarker.cache  - "spark/partials/exception.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+608 [main] DEBUG freemarker.cache  - "spark/partials/category.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+608 [main] DEBUG freemarker.cache  - "spark/partials/device.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+608 [main] DEBUG freemarker.cache  - "spark/partials/author.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+608 [main] DEBUG freemarker.cache  - "spark/partials/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+608 [main] DEBUG freemarker.cache  - "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+610 [main] DEBUG freemarker.cache  - "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+610 [main] DEBUG freemarker.cache  - "commons/commons-inject-js.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+Created Pet ID: 12345
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdatePet" classname="petStoreSwaggerAPITests.TestAPI" time="0.307">
+    <system-out><![CDATA[933 [main] DEBUG freemarker.cache  - "spark/spark.spa.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+934 [main] DEBUG freemarker.cache  - "commons/commons-variables.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+934 [main] DEBUG freemarker.cache  - "commons/commons-macros.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+934 [main] DEBUG freemarker.cache  - "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+934 [main] DEBUG freemarker.cache  - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+934 [main] DEBUG freemarker.cache  - "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+934 [main] DEBUG freemarker.cache  - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+934 [main] DEBUG freemarker.cache  - "spark/macros/attr-common.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+935 [main] DEBUG freemarker.cache  - "spark/partials/head.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+935 [main] DEBUG freemarker.cache  - "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+935 [main] DEBUG freemarker.cache  - "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+935 [main] DEBUG freemarker.cache  - "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+936 [main] DEBUG freemarker.cache  - "spark/partials/test.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+938 [main] DEBUG freemarker.cache  - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+938 [main] DEBUG freemarker.cache  - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+939 [main] DEBUG freemarker.cache  - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+939 [main] DEBUG freemarker.cache  - "spark/partials/exception.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+939 [main] DEBUG freemarker.cache  - "spark/partials/category.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+939 [main] DEBUG freemarker.cache  - "spark/partials/device.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+939 [main] DEBUG freemarker.cache  - "spark/partials/author.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+939 [main] DEBUG freemarker.cache  - "spark/partials/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+939 [main] DEBUG freemarker.cache  - "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+942 [main] DEBUG freemarker.cache  - "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+942 [main] DEBUG freemarker.cache  - "commons/commons-inject-js.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+]]></system-out>
+  </testcase>
+  <testcase name="testDeletePet" classname="petStoreSwaggerAPITests.TestAPI" time="0.29">
+    <system-out><![CDATA[1256 [main] DEBUG freemarker.cache  - "spark/spark.spa.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1256 [main] DEBUG freemarker.cache  - "commons/commons-variables.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1256 [main] DEBUG freemarker.cache  - "commons/commons-macros.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1256 [main] DEBUG freemarker.cache  - "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1256 [main] DEBUG freemarker.cache  - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1256 [main] DEBUG freemarker.cache  - "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1256 [main] DEBUG freemarker.cache  - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1256 [main] DEBUG freemarker.cache  - "spark/macros/attr-common.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1257 [main] DEBUG freemarker.cache  - "spark/partials/head.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1257 [main] DEBUG freemarker.cache  - "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1257 [main] DEBUG freemarker.cache  - "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1257 [main] DEBUG freemarker.cache  - "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1259 [main] DEBUG freemarker.cache  - "spark/partials/test.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1260 [main] DEBUG freemarker.cache  - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1261 [main] DEBUG freemarker.cache  - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1262 [main] DEBUG freemarker.cache  - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1263 [main] DEBUG freemarker.cache  - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1263 [main] DEBUG freemarker.cache  - "spark/partials/exception.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1263 [main] DEBUG freemarker.cache  - "spark/partials/category.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1263 [main] DEBUG freemarker.cache  - "spark/partials/device.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1263 [main] DEBUG freemarker.cache  - "spark/partials/author.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1263 [main] DEBUG freemarker.cache  - "spark/partials/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1263 [main] DEBUG freemarker.cache  - "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1265 [main] DEBUG freemarker.cache  - "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+1265 [main] DEBUG freemarker.cache  - "commons/commons-inject-js.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+]]></system-out>
+  </testcase>
+</testsuite>
