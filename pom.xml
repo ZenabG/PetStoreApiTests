@@ -11,6 +11,7 @@
 	<packaging>jar</packaging>
 
 	<name>PetStoreSwagger</name>
+	<url>http://www.example.com</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
