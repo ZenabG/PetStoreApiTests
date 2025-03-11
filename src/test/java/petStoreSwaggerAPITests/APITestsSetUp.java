@@ -45,7 +45,7 @@ public class APITestsSetUp {
 	@BeforeTest
 	public void beforeTest(ITestContext ctx) {
 		// Extent report logic
-		sparkReporter.config().setReportName("Test Report" + ctx.getCurrentXmlTest().getSuite().getName());
+		sparkReporter.config().setReportName("Test Report");
 		sparkReporter.config().setDocumentTitle("Test Report");
 		sparkReporter.config().setTheme(Theme.STANDARD);
 	}
