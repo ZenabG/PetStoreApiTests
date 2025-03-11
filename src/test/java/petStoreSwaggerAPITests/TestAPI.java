@@ -1,15 +1,18 @@
 package petStoreSwaggerAPITests;
 
-import Utils.JsonUtility;
-import Utils.Constants;
-import httpConnection.APIConnectionSetUp;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import org.json.simple.parser.ParseException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import testReport.ExtentReportSetUp;
+import httpConnection.APIConnectionSetUp;
+import org.json.simple.parser.ParseException;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import Utils.Constants;
+import Utils.JsonUtility;
 
 /**
  * This class contains test methods for Pet Store API.
@@ -26,7 +29,7 @@ public class TestAPI extends APIConnectionSetUp {
 	 * @throws ParseException
 	 */
 	@Test(priority = 0)
-	public void testGetAllAvailablePetDetails() throws InterruptedException, ParseException {
+	public void testGetAllAvailablePetDetails() throws InterruptedException {
 		System.out.println("Starting test: Get all available pet details");
 		String response = pullRequest(Constants.PetStoreAPI + Constants.GetPetsByStatus + Constants.AvailablePetStatus);
 		Assert.assertFalse(response.equals("[]") || response.isEmpty());
@@ -61,7 +64,7 @@ public class TestAPI extends APIConnectionSetUp {
 	 * @throws ParseException
 	 */
 	@Test(priority = 2)
-	public void testCreatePet() throws InterruptedException, ParseException {
+	public void testCreatePet() throws InterruptedException {
 		System.out.println("Starting test: Create a new pet");
 		String petJson = "{\"id\": 12345, \"name\": \"doggie\", \"status\": \"available\"}";
 		String response = postRequest(Constants.PetStoreAPI + Constants.PetEndpoint, petJson);
