@@ -1,4 +1,4 @@
-package petStoreSwaggerAPITests;
+package testReport;
 
 import java.io.IOException;
 
@@ -21,8 +21,6 @@ public class ExtentReportSetUp {
 	protected static ExtentReports extent;
 	protected static ExtentTest test;
 
-	private static final String EXTENT_REPORT_PATH = "./test-extent/extent";
-
 	@BeforeTest
 	public void initialiseLog4j() {
 		BasicConfigurator.configure();
@@ -31,7 +29,7 @@ public class ExtentReportSetUp {
 	@BeforeSuite
 	public static void beforeSuite() {
 		// Extent report logic
-		sparkReporter = new ExtentSparkReporter(EXTENT_REPORT_PATH + System.currentTimeMillis() + ".html");
+		sparkReporter = new ExtentSparkReporter("extent_report.html");
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
 	}
@@ -42,8 +40,8 @@ public class ExtentReportSetUp {
 	@BeforeTest
 	public void beforeTest(ITestContext ctx) {
 		// Extent report logic
-		sparkReporter.config().setReportName("Test Report");
-		sparkReporter.config().setDocumentTitle("Test Report");
+		sparkReporter.config().setReportName("Petstore API Tests Report");
+		sparkReporter.config().setDocumentTitle("Petstore API Tests Report");
 		sparkReporter.config().setTheme(Theme.STANDARD);
 	}
 
