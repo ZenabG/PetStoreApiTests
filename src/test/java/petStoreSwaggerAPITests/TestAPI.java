@@ -17,21 +17,24 @@ import Utils.JsonUtility;
 /**
  * This class contains test methods for Pet Store API.
  */
-public class TestAPI extends APIConnectionSetUp {
+public class TestAPI extends ExtentReportSetUp {
 
 	List<Long> petIDs = new ArrayList<>();
 	JsonUtility jsonUtility = new JsonUtility();
 
+	APIConnectionSetUp apiConnectionSetUp = new APIConnectionSetUp();
+
 	/**
 	 * Test to get all available pet details.
 	 *
+	 * @throws IOException
 	 * @throws InterruptedException
 	 * @throws ParseException
 	 */
 	@Test(priority = 0)
-	public void testGetAllAvailablePetDetails() throws InterruptedException {
+	public void testGetAllAvailablePetDetails() throws IOException, InterruptedException, ParseException {
 		System.out.println("Starting test: Get all available pet details");
-		String response = pullRequest(Constants.PetStoreAPI + Constants.GetPetsByStatus + Constants.AvailablePetStatus);
+		String response = apiConnectionSetUp.pullRequest(Constants.PetStoreAPI + Constants.GetPetsByStatus + Constants.AvailablePetStatus);
 		Assert.assertFalse(response.equals("[]") || response.isEmpty());
 
 		Map<Long, String> petIDNameMap = jsonUtility.getPetIDAndNameFromResponseJson(response);
@@ -46,13 +49,14 @@ public class TestAPI extends APIConnectionSetUp {
 	/**
 	 * Test to find a pet by its ID.
 	 *
+	 * @throws IOException
 	 * @throws InterruptedException
 	 * @throws ParseException
 	 */
 	@Test(priority = 1)
-	public void testFindPetByID() throws InterruptedException {
+	public void testFindPetByID() throws IOException, InterruptedException, ParseException {
 		System.out.println("Starting test: Find pet by ID");
-		String response = pullRequest(Constants.PetStoreAPI + Constants.PetIdStatus + petIDs.get(0));
+		String response = apiConnectionSetUp.pullRequest(Constants.PetStoreAPI + Constants.PetIdStatus + petIDs.get(0));
 		Assert.assertFalse(response.equals("[]") || response.isEmpty());
 		System.out.println("Completed test: Find pet by ID");
 	}
@@ -60,14 +64,15 @@ public class TestAPI extends APIConnectionSetUp {
 	/**
 	 * Test to create a new pet.
 	 *
+	 * @throws IOException
 	 * @throws InterruptedException
 	 * @throws ParseException
 	 */
 	@Test(priority = 2)
-	public void testCreatePet() throws InterruptedException {
+	public void testCreatePet() throws IOException, InterruptedException, ParseException {
 		System.out.println("Starting test: Create a new pet");
 		String petJson = "{\"id\": 12345, \"name\": \"doggie\", \"status\": \"available\"}";
-		String response = postRequest(Constants.PetStoreAPI + Constants.PetEndpoint, petJson);
+		String response = apiConnectionSetUp.postRequest(Constants.PetStoreAPI + Constants.PetEndpoint, petJson);
 		Assert.assertFalse(response.isEmpty());
 
 		// Extract the ID of the created pet and add it to the list
@@ -80,15 +85,16 @@ public class TestAPI extends APIConnectionSetUp {
 	/**
 	 * Test to update an existing pet.
 	 *
+	 * @throws IOException
 	 * @throws InterruptedException
 	 * @throws ParseException
 	 */
 	@Test(priority = 3)
-	public void testUpdatePet() throws InterruptedException {
+	public void testUpdatePet() throws IOException, InterruptedException, ParseException {
 		System.out.println("Starting test: Update an existing pet");
 		Long petIdToUpdate = petIDs.get(0);
 		String updatedPetJson = "{\"id\": " + petIdToUpdate + ", \"name\": \"updatedDoggie\", \"status\": \"sold\"}";
-		String response = putRequest(Constants.PetStoreAPI + Constants.PetEndpoint, updatedPetJson);
+		String response = apiConnectionSetUp.putRequest(Constants.PetStoreAPI + Constants.PetEndpoint, updatedPetJson);
 		Assert.assertFalse(response.isEmpty());
 		Assert.assertTrue(response.contains("updatedDoggie"));
 		System.out.println("Completed test: Update an existing pet");
@@ -97,13 +103,14 @@ public class TestAPI extends APIConnectionSetUp {
 	/**
 	 * Test to delete a pet by its ID.
 	 *
+	 * @throws IOException
 	 * @throws InterruptedException
 	 */
 	@Test(priority = 4)
-	public void testDeletePet() throws InterruptedException {
+	public void testDeletePet() throws IOException, InterruptedException {
 		System.out.println("Starting test: Delete a pet by ID");
 		Long petIdToDelete = petIDs.get(0);
-		String response = deleteRequest(Constants.PetStoreAPI + Constants.PetIdStatus + petIdToDelete);
+		String response = apiConnectionSetUp.deleteRequest(Constants.PetStoreAPI + Constants.PetIdStatus + petIdToDelete);
 		Assert.assertTrue(response.contains("200"));
 		System.out.println("Completed test: Delete a pet by ID");
 	}

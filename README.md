@@ -13,6 +13,7 @@ The project is created using Java with TestNG and Rest Assured frameworks. The p
 - **Rest Assured** : Java library used for testing and validating REST services
 - **Maven** : Build automation tool used for managing dependencies and building the project
 - **JSON Simple** : Java library used for parsing JSON data
+- **ExtentReports** : Java library used for generating test reports
 
 ## Project Structure
 
@@ -24,8 +25,8 @@ The project is created using Java with TestNG and Rest Assured frameworks. The p
 - `pom.xml`: Maven configuration file.
 
 ## Test Reports
-- Maven Surefire Plugin is used to generate test reports.
-- The reports are generated in the `target/surefire-reports` directory with the name `emailable-report.html`.
+- ExtentReports is used to generate test reports.
+- The reports are generated in the `test-extent` directory with the name `report.html`.
 
 ## Functional Tests
 
