@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import httpConnection.APIConnectionSetUp;
 import org.json.simple.parser.ParseException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -12,7 +13,7 @@ import org.testng.annotations.Test;
 import Utils.Constants;
 import Utils.JsonUtility;
 
-public class TestAPI extends APITestsSetUp {
+public class TestAPI extends APIConnectionSetUp {
 
 	List<Long> petIDs = new ArrayList<>();
 	JsonUtility jsonUtility = new JsonUtility();
