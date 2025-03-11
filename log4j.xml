@@ -9,7 +9,7 @@
     </appender>
 
     <root>
-        <priority value="debug" />
+        <priority value="warn" />
         <appender-ref ref="Console" />
     </root>
 
