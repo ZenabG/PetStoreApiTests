@@ -1,15 +1,15 @@
 package petStoreSwaggerAPITests;
 
-import Utils.JsonUtility;
-import Utils.Constants;
 import httpConnection.APIConnectionSetUp;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.json.simple.parser.ParseException;
+import Utils.Constants;
+import Utils.JsonUtility;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
 
 /**
  * This class contains test methods for Pet Store API.
