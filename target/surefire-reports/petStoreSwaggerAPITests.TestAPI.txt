@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: petStoreSwaggerAPITests.TestAPI
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.47 s -- in petStoreSwaggerAPITests.TestAPI
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.68 s -- in petStoreSwaggerAPITests.TestAPI
