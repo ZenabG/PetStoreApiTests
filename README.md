@@ -12,7 +12,6 @@ The project is created using Java with TestNG and Rest Assured frameworks. The p
 - **TestNG** : Testing framework used for executing the tests
 - **Rest Assured** : Java library used for testing and validating REST services
 - **Maven** : Build automation tool used for managing dependencies and building the project
-- **Log4j** : Logging framework used for logging test information
 - **JSON Simple** : Java library used for parsing JSON data
 - **ExtentReports** : Java library used for generating test reports
 

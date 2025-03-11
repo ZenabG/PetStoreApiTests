@@ -2,14 +2,11 @@ package httpConnection;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import org.apache.log4j.Logger;
 
 /**
  * This class sets up the API connection and handles HTTP requests with retries.
  */
 public class APIConnectionSetUp {
-
-	private final Logger log = Logger.getLogger(APIConnectionSetUp.class);
 
 	private static final String DEADLOCK = "Deadlock";
 	private static final int RETRY_MAX = 3;
@@ -76,7 +73,7 @@ public class APIConnectionSetUp {
 
 		for (int i = 0; i < RETRY_MAX; i++) {
 			try {
-				log.debug(String.format("Making %s request to: %s", method, requestUrl));
+				System.out.println(String.format("Making %s request to: %s", method, requestUrl));
 
 				Response res = RestAssured.given()
 						.relaxedHTTPSValidation()
@@ -90,7 +87,7 @@ public class APIConnectionSetUp {
 				response = res.getBody().asString();
 
 				if (statusCode == 200 || statusCode == 201) {
-					log.debug(String.format("Response received: %s", response));
+					System.out.println(String.format("Response received: %s", response));
 					return response;
 				} else {
 					throw new RuntimeException(method + " request failed. Status Code: " + statusCode);
@@ -99,7 +96,7 @@ public class APIConnectionSetUp {
 			} catch (Exception e) {
 				if (e.getMessage().contains(DEADLOCK)) {
 					long retryWait = WAIT_MIN + (long) (Math.random() * WAIT_MAX);
-					log.error(String.format("%s request: %s, retry: %d. Retrying in %d ms.", method, requestUrl, i, retryWait), e);
+					System.err.println(String.format("%s request: %s, retry: %d. Retrying in %d ms.", method, requestUrl, i, retryWait));
 					Thread.sleep(retryWait);
 				} else {
 					throw e;
