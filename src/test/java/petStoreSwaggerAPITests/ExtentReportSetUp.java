@@ -1,9 +1,6 @@
 package petStoreSwaggerAPITests;
 
 import java.io.IOException;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 
 import org.apache.log4j.BasicConfigurator;
 import org.testng.ITestContext;
@@ -18,7 +15,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter; // Updated import
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class APITestsSetUp {
+public class ExtentReportSetUp {
 
 	protected static ExtentSparkReporter sparkReporter; // Updated class
 	protected static ExtentReports extent;

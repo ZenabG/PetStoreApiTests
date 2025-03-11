@@ -13,14 +13,16 @@ import org.testng.annotations.Test;
 import Utils.Constants;
 import Utils.JsonUtility;
 
-public class TestAPI extends APIConnectionSetUp {
+public class TestAPI extends ExtentReportSetUp {
 
 	List<Long> petIDs = new ArrayList<>();
 	JsonUtility jsonUtility = new JsonUtility();
 
+	APIConnectionSetUp apiConnectionSetUp = new APIConnectionSetUp();
+
 	@Test(priority = 0)
 	public void testGetAllAvailablePetDetails() throws IOException, InterruptedException, ParseException {
-		String response = pullRequest(Constants.PetStoreAPI + Constants.GetPetsByStatus + Constants.AvailablePetStatus);
+		String response = apiConnectionSetUp.pullRequest(Constants.PetStoreAPI + Constants.GetPetsByStatus + Constants.AvailablePetStatus);
 		Assert.assertFalse(response.equals("[]") || response.isEmpty());
 
 		Map<Long, String> petIDNameMap = jsonUtility.getPetIDAndNameFromResponseJson(response);
@@ -33,14 +35,14 @@ public class TestAPI extends APIConnectionSetUp {
 
 	@Test(priority = 1)
 	public void testFindPetByID() throws IOException, InterruptedException, ParseException {
-		String response = pullRequest(Constants.PetStoreAPI + Constants.PetIdStatus + petIDs.get(0));
+		String response = apiConnectionSetUp.pullRequest(Constants.PetStoreAPI + Constants.PetIdStatus + petIDs.get(0));
 		Assert.assertFalse(response.equals("[]") || response.isEmpty());
 	}
 
 	@Test(priority = 2)
 	public void testCreatePet() throws IOException, InterruptedException, ParseException {
 		String petJson = "{\"id\": 12345, \"name\": \"doggie\", \"status\": \"available\"}";
-		String response = postRequest(Constants.PetStoreAPI + Constants.PetEndpoint, petJson);
+		String response = apiConnectionSetUp.postRequest(Constants.PetStoreAPI + Constants.PetEndpoint, petJson);
 		Assert.assertFalse(response.isEmpty());
 
 		// Extract the ID of the created pet and add it to the list
@@ -53,7 +55,7 @@ public class TestAPI extends APIConnectionSetUp {
 	public void testUpdatePet() throws IOException, InterruptedException, ParseException {
 		Long petIdToUpdate = petIDs.get(0);
 		String updatedPetJson = "{\"id\": " + petIdToUpdate + ", \"name\": \"updatedDoggie\", \"status\": \"sold\"}";
-		String response = putRequest(Constants.PetStoreAPI + Constants.PetEndpoint, updatedPetJson);
+		String response = apiConnectionSetUp.putRequest(Constants.PetStoreAPI + Constants.PetEndpoint, updatedPetJson);
 		Assert.assertFalse(response.isEmpty());
 		Assert.assertTrue(response.contains("updatedDoggie"));
 	}
@@ -61,7 +63,7 @@ public class TestAPI extends APIConnectionSetUp {
 	@Test(priority = 4)
 	public void testDeletePet() throws IOException, InterruptedException {
 		Long petIdToDelete = petIDs.get(0);
-		String response = deleteRequest(Constants.PetStoreAPI + Constants.PetIdStatus + petIdToDelete);
+		String response = apiConnectionSetUp.deleteRequest(Constants.PetStoreAPI + Constants.PetIdStatus + petIdToDelete);
 		Assert.assertTrue(response.contains("200"));
 	}
 }
