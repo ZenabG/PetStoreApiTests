@@ -2,7 +2,6 @@ package testReport;
 
 import java.io.IOException;
 
-import org.apache.log4j.BasicConfigurator;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -23,14 +22,6 @@ public class ExtentReportSetUp {
 	protected static ExtentSparkReporter sparkReporter;
 	protected static ExtentReports extent;
 	protected static ExtentTest test;
-
-	/**
-	 * Initializes Log4j configuration.
-	 */
-	@BeforeTest
-	public void initialiseLog4j() {
-		BasicConfigurator.configure();
-	}
 
 	/**
 	 * Sets up the ExtentReports before the test suite starts.
@@ -74,10 +65,12 @@ public class ExtentReportSetUp {
 	public void getTestResultInExtentReport(ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.fail(result.getThrowable().getMessage());
+			System.out.println("Test failed: " + result.getMethod().getMethodName());
 		}
 
 		if (result.getStatus() == ITestResult.SKIP) {
 			test.skip(result.getThrowable().getMessage());
+			System.out.println("Test skipped: " + result.getMethod().getMethodName());
 		}
 
 		extent.flush();
