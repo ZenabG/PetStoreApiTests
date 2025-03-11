@@ -34,13 +34,6 @@
 			<version>1.1.1</version>
 		</dependency>
 
-		<!-- ExtentReports Dependency -->
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>5.0.9</version>
-		</dependency>
-
 		<!-- Lombok Dependency -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
