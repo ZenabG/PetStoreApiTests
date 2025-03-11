@@ -14,6 +14,9 @@ import org.testng.annotations.Test;
 import Utils.Constants;
 import Utils.JsonUtility;
 
+/**
+ * This class contains test methods for Pet Store API.
+ */
 public class TestAPI extends ExtentReportSetUp {
 
 	List<Long> petIDs = new ArrayList<>();
@@ -21,6 +24,13 @@ public class TestAPI extends ExtentReportSetUp {
 
 	APIConnectionSetUp apiConnectionSetUp = new APIConnectionSetUp();
 
+	/**
+	 * Test to get all available pet details.
+	 *
+	 * @throws IOException
+	 * @throws InterruptedException
+	 * @throws ParseException
+	 */
 	@Test(priority = 0)
 	public void testGetAllAvailablePetDetails() throws IOException, InterruptedException, ParseException {
 		String response = apiConnectionSetUp.pullRequest(Constants.PetStoreAPI + Constants.GetPetsByStatus + Constants.AvailablePetStatus);
@@ -34,12 +44,26 @@ public class TestAPI extends ExtentReportSetUp {
 		}
 	}
 
+	/**
+	 * Test to find a pet by its ID.
+	 *
+	 * @throws IOException
+	 * @throws InterruptedException
+	 * @throws ParseException
+	 */
 	@Test(priority = 1)
 	public void testFindPetByID() throws IOException, InterruptedException, ParseException {
 		String response = apiConnectionSetUp.pullRequest(Constants.PetStoreAPI + Constants.PetIdStatus + petIDs.get(0));
 		Assert.assertFalse(response.equals("[]") || response.isEmpty());
 	}
 
+	/**
+	 * Test to create a new pet.
+	 *
+	 * @throws IOException
+	 * @throws InterruptedException
+	 * @throws ParseException
+	 */
 	@Test(priority = 2)
 	public void testCreatePet() throws IOException, InterruptedException, ParseException {
 		String petJson = "{\"id\": 12345, \"name\": \"doggie\", \"status\": \"available\"}";
@@ -52,6 +76,13 @@ public class TestAPI extends ExtentReportSetUp {
 		System.out.println("Created Pet ID: " + createdPetId);
 	}
 
+	/**
+	 * Test to update an existing pet.
+	 *
+	 * @throws IOException
+	 * @throws InterruptedException
+	 * @throws ParseException
+	 */
 	@Test(priority = 3)
 	public void testUpdatePet() throws IOException, InterruptedException, ParseException {
 		Long petIdToUpdate = petIDs.get(0);
@@ -61,6 +92,12 @@ public class TestAPI extends ExtentReportSetUp {
 		Assert.assertTrue(response.contains("updatedDoggie"));
 	}
 
+	/**
+	 * Test to delete a pet by its ID.
+	 *
+	 * @throws IOException
+	 * @throws InterruptedException
+	 */
 	@Test(priority = 4)
 	public void testDeletePet() throws IOException, InterruptedException {
 		Long petIdToDelete = petIDs.get(0);
