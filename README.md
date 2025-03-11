@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Pet Store API is a sample REST API that provides endpoints for managing pets, users, and orders. The API is publicly available and can be accessed at [https://petstore.swagger.io/v2](https://petstore.swagger.io/v2).
+The Pet Store API is a sample REST API that provides endpoints for managing pets, users, and orders. The API is publicly available and can be accessed at [https://petstore3.swagger.io/](https://petstore.swagger.io/v2).
 
 The project is created using Java with TestNG and Rest Assured frameworks. The project is designed to test the functionality of the Pet Store API.
 
