@@ -12,12 +12,12 @@ import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter; // Updated import
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReportSetUp {
 
-	protected static ExtentSparkReporter sparkReporter;
+	protected static ExtentSparkReporter sparkReporter; // Updated class
 	protected static ExtentReports extent;
 	protected static ExtentTest test;
 
@@ -56,9 +56,8 @@ public class ExtentReportSetUp {
 			test.fail(result.getThrowable().getMessage());
 		}
 
-		if (result.getStatus() == ITestResult.SKIP) {
+		if (result.getStatus() == ITestResult.SKIP)
 			test.skip(result.getThrowable().getMessage());
-		}
 
 		extent.flush();
 	}
